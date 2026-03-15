@@ -1,0 +1,15 @@
+# Data Processing & Quantitative Modeling
+polars>=0.20.0
+numpy>=1.26.0
+
+# Market Data Ingestion
+yfinance>=0.2.36
+
+# Asynchronous Network & API Integration
+aiohttp>=3.9.3
+
+# Data Validation & Strict Schema Enforcement
+pydantic>=2.6.1
+
+# Institutional-Grade Data Visualization
+plotly>=5.18.0
