@@ -26,3 +26,21 @@ Execute the primary Jupyter Notebook (pre.ipynb) sequentially to ingest data, ru
 
 ## Computational Complexity
 Designed for massive scale, the system's temporal alignment and PIT joins operate in O(MlogM+NlogN+M+N) time. It is strictly bounded by the Apache Arrow columnar memory footprint, ensuring O(1) copy overhead during execution graph materialization.
+
+## Quantitative Visualizations
+
+### 1. Macro-Narrative vs. Market Reality
+Analysis of the decoupling between the LLM-derived Recession Fear Index (Z-Score) and S&P 500 cumulative returns.
+![Divergence Analysis](divergence_analysis.png)
+
+### 2. Lead-Lag Relationship (CCF)
+Cross-Correlation Function validating the signal as a leading indicator with peak negative correlation at $Lag=1$.
+![CCF Analysis](ccf_analysis.png)
+
+### 3. Sector-Specific Regime Shifts
+Rolling 5-day Z-Score heatmap identifying idiosyncratic risk and statistical anomalies across market sectors.
+![Sector Heatmap](sector_heatmap.png)
+
+### 4. Daily Sentiment Aggregate
+Confidence-weighted (SNR optimized) daily sentiment scores before temporal smoothing.
+![Daily Sentiment](daily_sentiment.png)
