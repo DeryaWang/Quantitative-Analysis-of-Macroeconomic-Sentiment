@@ -21,8 +21,8 @@ GUARDIAN_API_KEY
 
 OPENAI_API_KEY
 
-Execution:
+## Execution:
 Execute the primary Jupyter Notebook (pre.ipynb) sequentially to ingest data, run inference, compile the time-series, and generate performance attribution and divergence analytics.
 
-Computational Complexity
+## Computational Complexity
 Designed for massive scale, the system's temporal alignment and PIT joins operate in O(MlogM+NlogN+M+N) time. It is strictly bounded by the Apache Arrow columnar memory footprint, ensuring O(1) copy overhead during execution graph materialization.
